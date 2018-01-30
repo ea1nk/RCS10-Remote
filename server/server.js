@@ -1,24 +1,12 @@
-var ant_port = process.argv[2];
-
 // Websocket initialization
 var WebSocketServer = require("ws").Server
 var wss = new WebSocketServer({
     port: 64000
 });
 
-// Oopps! Someone forgot to give some details...
-
-if (!rotor_port) {
-    console.log("\nError:\n Usage: nodejs server.js <Antenna port>\n");
-    process.exit();
-}
-
 // Init banner to make it friendly
 
 console.log('\nRCS10 Remote v0.1 - 2014 Juan J. Lamas EA1NK\n\n     ++++ Server  Up & Running ++++\n');
-if (ant_port) {
-    console.log("       Antennas on: " + ant_port);
-}
 console.log("       Listening on port: 64000\n");
 console.log("     ++++++++++++++++++++++++++++++\n");
 
