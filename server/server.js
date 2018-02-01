@@ -1,3 +1,9 @@
+/* ---------------------------------------------------
+             Ameripino WebSocket Server
+        2018 - Juan J. Lamas EA1NK - SCQ Devices
+   ---------------------------------------------------
+*/
+
 // Websocket initialization
 var WebSocketServer = require("ws").Server
 var wss = new WebSocketServer({
