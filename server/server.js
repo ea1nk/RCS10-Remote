@@ -36,7 +36,7 @@ function sel_antena(position){
 	var exec = require('child_process').exec;
 	function puts(error,stdout,stderr){console.log(stdout);}
 	var posicion = position.substr(3,1);
-	console.log("Conmutando antena: " + posicion);
+	console.log("Switching to: " + posicion);
 	wsocket.send("R:"+posicion);
 	var exe = "relay_control -r" + posicion;
 	//console.log(exe);
@@ -54,5 +54,6 @@ function read_status(){
 		;}
 	var exe = "relay_control -rs";
 	exec(exe,puts);
-	console.log(response);
+	console.log("Board Status:"+response);
+	wsocket.send(response);
 }
