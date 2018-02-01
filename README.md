@@ -1,4 +1,4 @@
-# RCS10-Remote-
+# RCS10-Remote
 2012 - SCQ Devices - EA1NK
 Remote control for Ameritron RCS10 Antenna Switch
 
