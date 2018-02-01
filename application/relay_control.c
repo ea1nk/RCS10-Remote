@@ -33,7 +33,9 @@ int main(int argc,char **argv){
 	int f,i;
 	unsigned char buf[1];
 	unsigned char stat[1];
+	/* If serial number is needed uncomment the line below and provide the board serial number */
 	//unsigned char *ant_snumber="AAABBBCC";
+	
 	char *msg="Invalid parameters.\nAll Relays turned OFF!"; // If invalid parameter this message will be displayed.
 	buf[0] = ALL_OFF; // If argv is not valid, all relays OFF.
 	int retval = 0;
@@ -48,7 +50,9 @@ int main(int argc,char **argv){
  				}
 	f = ftdi_usb_open(ftdi,0x0403,0x6001); // If filter by serial not needed.
 	
+	/*If serial number is used comment the previous line and uncomment the line below*/
 	//f = ftdi_usb_open_desc(ftdi, 0x0403,0x6001,NULL,ant_snumber);
+	
 	
 	if(f < 0 && f != -5){ // No FTDI present
 
