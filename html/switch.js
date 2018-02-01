@@ -1,3 +1,9 @@
+/* ---------------------------------------------------
+                Ameripino WebSocket Client
+        2018 - Juan J. Lamas EA1NK - SCQ Devices
+   ---------------------------------------------------
+*/ 
+
 var host = 'your_host';
 var port = 'your_port';
 var socket = new WebSocket('ws://' + host + ":" + port);
