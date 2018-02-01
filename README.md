@@ -9,7 +9,7 @@ Based on Node.js and using HTML5 and WebSockets technology a simple web interfac
 WARNING:
 ----------------------------------------------------------------
 
-The RCS10 control module, must be connected to the relay board using the 8 inputs located at the back of the controller, one input to one relay of the USB relay board. 
+The RCS10 controller will be connected to the relay board using the 8 inputs located at the back of the controller, one input to one relay of the USB relay board. 
 
 The RCS10 controller MUST NOT be connected to the mains. Power switch at the front panel MUST be OFF.
 
