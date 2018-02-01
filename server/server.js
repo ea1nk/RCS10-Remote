@@ -34,7 +34,11 @@ function procesa_comando(comando){
 function sel_antena(position){
 
 	var exec = require('child_process').exec;
-	function puts(error,stdout,stderr){console.log(stdout);}
+	var response = "";
+	function puts(error,stdout,stderr){
+		console.log(stdout);
+		wsocket.send(stdout);
+	}
 	var posicion = position.substr(3,1);
 	console.log("Switching to: " + posicion);
 	wsocket.send("R:"+posicion);
@@ -48,12 +52,11 @@ function read_status(){
 
 	// Get Relay Status
 	var exec = require('child_process').exec;
-	var response = "";
+	
 	function puts(error,stdout,stderr){
-		response = stdout
+		console.log("Board Status:"+stdout);
+		wsocket.send(stdout);
 		;}
 	var exe = "relay_control -rs";
-	exec(exe,puts);
-	console.log("Board Status:"+response);
-	wsocket.send(response);
+	exec(exe,puts);	
 }
