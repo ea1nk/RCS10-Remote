@@ -22,6 +22,11 @@ Software and Libraries:
 
 NodeJS
 
+ws node library
+
 FTDI driver and libraries
+
+JQuery
+Bootstrap4
 
 
