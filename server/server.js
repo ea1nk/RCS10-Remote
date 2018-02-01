@@ -1,7 +1,8 @@
-/* ---------------------------------------------------
-             Ameripino WebSocket Server
-        2018 - Juan J. Lamas EA1NK - SCQ Devices
-   ---------------------------------------------------
+/* 
+	---------------------------------------------------
+        		Ameripino WebSocket Server
+        	2018 - Juan J. Lamas EA1NK - SCQ Devices
+	---------------------------------------------------
 */
 
 // Websocket initialization
