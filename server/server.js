@@ -27,7 +27,7 @@ function procesa_comando(comando){
 
 	var accion = comando.substr(0,3);
 	if(accion == 'ant'){sel_antena(comando);}
-	if(accion == 'stat'){read_status();}
+	if(accion == 'sts'){read_status();}
 
 }
 
