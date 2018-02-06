@@ -25,21 +25,21 @@ Hardware:
 
 RaspberryPi board (any flavour) with GNU Linux OS installed.
 
-Easy Rotor Control ERC board
+Denkovi USB 8 Relay board based on FTDI FT245RL chip
 
-https://www.schmidt-alba.de/eshop/
-
+http://denkovi.com/usb-eight-channel-relay-board-for-automation
+ 
 ----------------------------------------------------------------
-
+  
 Software and Libraries:
-----------------------------------------------------------------
 
-NodeJS
+ NodeJS
+ 
+ ws node library
+ 
+ FTDI driver and libraries
 
-serialport node library
-
-JQuery
-
-Bootstrap4
-
+ JQuery
+ 
+ Bootstrap4
 
