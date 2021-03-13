@@ -12,3 +12,10 @@ where X is the relay to be switched ON/OFF.
 -rs returns the status of the relays.
 
 -ra (All On) -rn (All Off) are provided only for testing purposes and should NEVER be used with the RCS10 Antenna Switch. 
+
+RaspberryPi Instructions:
+---------------------------------------------
+
+sudo apt-get install libftdi1 libftdi libftdi-dev
+
+gcc -v -o relay_control -lftdi relay_control.c
